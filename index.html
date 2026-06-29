@@ -301,8 +301,8 @@ select.input { cursor: pointer; }
 
 <!-- Nuevo movimiento -->
 <div class="sheet" id="sheet-movimiento">
-  <div class="sheet-handle"></div>
-  <div class="sheet-title">Nuevo movimiento</div>
+  <div class="sheet-handle" onclick="closeAllSheets()" style="cursor:pointer;"></div>
+  <div style="display:flex;align-items:center;justify-content:space-between;padding:0 20px 16px;"><div class="sheet-title" style="padding:0;">Nuevo movimiento</div><button onclick="closeAllSheets()" style="background:none;border:none;color:var(--muted);font-size:26px;cursor:pointer;padding:0 4px;line-height:1;">×</button></div>
   <div class="sheet-section">
     <div class="tipo-selector">
       <button class="tipo-btn active gasto" onclick="setTipo('gasto',this)">Gasto</button>
@@ -353,8 +353,8 @@ select.input { cursor: pointer; }
 
 <!-- Importar CSV -->
 <div class="sheet" id="sheet-import">
-  <div class="sheet-handle"></div>
-  <div class="sheet-title">Importar CSV del banco</div>
+  <div class="sheet-handle" onclick="closeAllSheets()" style="cursor:pointer;"></div>
+  <div style="display:flex;align-items:center;justify-content:space-between;padding:0 20px 16px;"><div class="sheet-title" style="padding:0;">Importar CSV del banco</div><button onclick="closeAllSheets()" style="background:none;border:none;color:var(--muted);font-size:26px;cursor:pointer;padding:0 4px;line-height:1;">×</button></div>
   <div class="sheet-section">
     <p style="font-size:14px;color:var(--muted);margin-bottom:16px;">Subí el archivo CSV que descargás del home banking. Se van a importar como gastos de tarjeta.</p>
     <div class="photo-zone" onclick="document.getElementById('csv-input').click()" style="border-style:solid;">
@@ -369,8 +369,8 @@ select.input { cursor: pointer; }
 
 <!-- Nueva suscripción -->
 <div class="sheet" id="sheet-suscripcion">
-  <div class="sheet-handle"></div>
-  <div class="sheet-title">Nueva suscripción</div>
+  <div class="sheet-handle" onclick="closeAllSheets()" style="cursor:pointer;"></div>
+  <div style="display:flex;align-items:center;justify-content:space-between;padding:0 20px 16px;"><div class="sheet-title" style="padding:0;">Nueva suscripción</div><button onclick="closeAllSheets()" style="background:none;border:none;color:var(--muted);font-size:26px;cursor:pointer;padding:0 4px;line-height:1;">×</button></div>
   <div class="sheet-section"><input class="input" id="sus-nombre" type="text" placeholder="Ej: Netflix, Spotify..."></div>
   <div class="amount-wrap">
     <span class="amount-currency" id="sus-currency-sym">$</span>
@@ -396,8 +396,8 @@ select.input { cursor: pointer; }
 
 <!-- Nueva cuota -->
 <div class="sheet" id="sheet-cuota">
-  <div class="sheet-handle"></div>
-  <div class="sheet-title">Cuota de tarjeta</div>
+  <div class="sheet-handle" onclick="closeAllSheets()" style="cursor:pointer;"></div>
+  <div style="display:flex;align-items:center;justify-content:space-between;padding:0 20px 16px;"><div class="sheet-title" style="padding:0;">Cuota de tarjeta</div><button onclick="closeAllSheets()" style="background:none;border:none;color:var(--muted);font-size:26px;cursor:pointer;padding:0 4px;line-height:1;">×</button></div>
   <div class="sheet-section"><input class="input" id="cuo-nombre" type="text" placeholder="Ej: Notebook Samsung..."></div>
   <div class="amount-wrap">
     <span class="amount-currency">$</span>
@@ -416,8 +416,8 @@ select.input { cursor: pointer; }
 
 <!-- Nueva cuenta -->
 <div class="sheet" id="sheet-cuenta">
-  <div class="sheet-handle"></div>
-  <div class="sheet-title">Nueva cuenta</div>
+  <div class="sheet-handle" onclick="closeAllSheets()" style="cursor:pointer;"></div>
+  <div style="display:flex;align-items:center;justify-content:space-between;padding:0 20px 16px;"><div class="sheet-title" style="padding:0;">Nueva cuenta</div><button onclick="closeAllSheets()" style="background:none;border:none;color:var(--muted);font-size:26px;cursor:pointer;padding:0 4px;line-height:1;">×</button></div>
   <div class="sheet-section">
     <div class="card-title" style="margin-bottom:6px;">Nombre</div>
     <input class="input" id="cta-nombre" type="text" placeholder="Ej: Efectivo, Visa Galicia...">
