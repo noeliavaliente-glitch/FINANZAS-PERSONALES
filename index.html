@@ -158,8 +158,9 @@ select.input { cursor: pointer; }
 .tipo-btn.active.ingreso { background: rgba(29,158,117,0.15); color: var(--green); border-color: var(--green); }
 .tipo-btn.active.transferencia { background: rgba(55,138,221,0.15); color: var(--blue); border-color: var(--blue); }
 
-.chips-scroll { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+.chips-scroll { display: flex; gap: 8px; overflow-x: auto; padding: 4px 0 10px; -webkit-overflow-scrolling: touch; scrollbar-width: none; touch-action: pan-x; }
 .chips-scroll::-webkit-scrollbar { display: none; }
+.chips-scroll .chip { flex-shrink: 0; }
 .chip { flex-shrink: 0; padding: 8px 14px; border-radius: 99px; border: 0.5px solid var(--border); background: var(--surface2); color: var(--muted); font-size: 13px; cursor: pointer; white-space: nowrap; }
 .chip.active { background: var(--text); color: var(--bg); border-color: transparent; font-weight: 600; }
 
